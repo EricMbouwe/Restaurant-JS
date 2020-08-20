@@ -3,16 +3,24 @@ import { createAboutPage as loadAboutPage } from "./about.js";
 import { createMenuPage as loadMenuPage } from './menu.js'
 import { createContactPage as loadContactpage } from './contact.js'
 
-const pageContent = document.getElementById('content')
-const aboutButton = document.getElementById('about')
-const contactButton = document.getElementById('contact')
 
 loadPage()
-const menuButton = document.getElementById('menu')
+const aboutButton = document.getElementById('menu')
+const menuButton = document.getElementById('about')
+const contactButton = document.getElementById('contact')
 
-// (function handleClick() {
-//   console.log('test');
-// })()
+function updatePage() {
+  clearPage()
+  loadAboutPage()
+}
+
+function clearPage() {
+
+}
+
+aboutButton.addEventListener('click', updatePage)
+menuButton.addEventListener('click', updatePage)
+contactButton.addEventListener('click', updatePage)
 
 menuButton.addEventListener('click', function () {
   const tab = document.getElementById('aboutPage')

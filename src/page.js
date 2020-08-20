@@ -17,7 +17,7 @@ function createHeader() {
   header.appendChild(logo)
 
   header.className = 'header'
-  brand.innerHTML = 'MANGER BIO'
+  brand.innerHTML = 'Manger BIO'
 }
 
 function createTabsMenu() {

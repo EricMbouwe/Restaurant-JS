@@ -1,8 +1,8 @@
 export function createContactPage() {
   const wrapper = document.createElement('div')
   const socialLinks = document.createElement('div')
-  const facebook = documment.createElement('span')
-  const instagram = documment.createElement('span')
+  const facebook = document.createElement('span')
+  const instagram = document.createElement('span')
   const copyrights = document.createElement('small')
 
   wrapper.appendChild(socialLinks)

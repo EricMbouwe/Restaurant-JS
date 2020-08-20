@@ -28,26 +28,35 @@ body {
 #content {
 
   .header {
-    background-color: rgb(209, 205, 205);
+    background-color: #eee;
     padding: 2rem;
     opacity: .8;
     z-index: 100;
   }
-
+  
   .tabs {
-    padding: 1rem 2rem;
-    background-color: #eee;
+    background-color: rgb(209, 205, 205);
     font-size: 1rem;
     font-weight: bold;
 
-    span {
+    a {
+      display: inline-block;
       cursor: pointer;
-      margin-right: 1rem;
+      padding: 1.2rem;
 
       &:hover {
         color: green;
       }
+      
+      &:focus {
+        border: 1px solid #000;
+        background-color: indigo;
+      }
     }
+  }
+
+  .tab {
+    font-weight: bold;
   }
 
   .about {

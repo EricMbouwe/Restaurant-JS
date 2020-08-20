@@ -14,26 +14,35 @@ body {
 }
 
 #content .header {
-  background-color: #d1cdcd;
+  background-color: #eee;
   padding: 2rem;
   opacity: .8;
   z-index: 100;
 }
 
 #content .tabs {
-  padding: 1rem 2rem;
-  background-color: #eee;
+  background-color: #d1cdcd;
   font-size: 1rem;
   font-weight: bold;
 }
 
-#content .tabs span {
+#content .tabs a {
+  display: inline-block;
   cursor: pointer;
-  margin-right: 1rem;
+  padding: 1.2rem;
 }
 
-#content .tabs span:hover {
+#content .tabs a:hover {
   color: green;
+}
+
+#content .tabs a:focus {
+  border: 1px solid #000;
+  background-color: indigo;
+}
+
+#content .tab {
+  font-weight: bold;
 }
 
 #content .about {

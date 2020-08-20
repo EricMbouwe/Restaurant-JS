@@ -24,9 +24,9 @@ function createHeader() {
 
 function createTabsMenu() {
   const tabs = document.createElement('div')
-  const about = document.createElement('span')
-  const menu = document.createElement('span')
-  const contact = document.createElement('span')
+  const about = document.createElement('a')
+  const menu = document.createElement('a')
+  const contact = document.createElement('a')
 
   content.appendChild(tabs)
   tabs.appendChild(about)

@@ -1,16 +1,16 @@
 import { loadPage } from './page.js'
-import { createAboutPage as loadAboutPage } from "./about.js";
+import { createhomePage as loadhomePage } from "./home.js";
 import { createMenuPage as loadMenuPage } from './menu.js'
 import { createContactPage as loadContactPage } from './contact.js'
 
 loadPage()
 
 const pageContent = document.getElementById('content')
-const aboutButton = document.getElementById('aboutBtn')
+const homeButton = document.getElementById('homeBtn')
 const menuButton = document.getElementById('menuBtn')
 const contactButton = document.getElementById('contactBtn')
 
-aboutButton.classList.add('active')
+homeButton.classList.add('active')
 
 function clearPage() {
   const currentTab = document.querySelector('.tab')
@@ -21,11 +21,11 @@ function clearPage() {
 }
 
 
-aboutButton.addEventListener('click', () => {
+homeButton.addEventListener('click', () => {
   clearPage()
-  setActiveTabClass(aboutButton)
-  const aboutPage = loadAboutPage()
-  pageContent.appendChild(aboutPage)
+  setActiveTabClass(homeButton)
+  const homePage = loadhomePage()
+  pageContent.appendChild(homePage)
 }, false)
 
 menuButton.addEventListener('click', () => {

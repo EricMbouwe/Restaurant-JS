@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-image: url(./restaurant-landing.jpg);
   background-size: 100vw;
   background-position: center top;
@@ -15,24 +15,28 @@ body {
 }
 
 #content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .header {
-    background-color: #eee;
-    padding: 2rem;
-    opacity: .8;
     z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
   }
   
   .tabs {
     background-color: rgb(209, 205, 205);
-    font-size: 1rem;
-    font-weight: bold;
-    border-bottom: 4px solid indigo;
+    font-size: 1.2rem;
+    border-bottom: .4rem solid indigo;
 
     a {
       display: inline-block;
       cursor: pointer;
-      padding: 1.2rem;
+      padding: 1rem;
       border: 1px solid inherit;
 
       &:hover {
@@ -49,24 +53,38 @@ body {
     color: #fff;
   }
 
-  .tab {
-    font-weight: bold;
-  }
+  .home {
+    display: flex;
+    width: 60%;
+    align-self: center;
 
-  .about {
-    color: purple;
+    article {
+      background-color: #000;
+      opacity: 0.8;
+      color: #fff;
+      padding: 2rem;
+      line-height: 1.5rem;
+    }
+
+    img {
+      order: 2;
+      width: 40%;
+    }
   }
 
   .menu {
-    color: #0fb9b1;
+    background-color: #000;
+    opacity: 0.8;
+    color: #fff;
+    padding: 2rem;
+    line-height: 1.5rem;
   }
 
   .contact {
-    color: indigo;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    color: #fff;
+    padding: 2rem;
+    line-height: 1.5rem;
   }
 }

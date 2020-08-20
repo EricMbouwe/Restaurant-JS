@@ -1,7 +1,7 @@
-import { createAboutPage as loadAboutPage } from './about.js'
+import { createhomePage as loadhomePage } from './home.js'
 
 const content = document.getElementById('content')
-const initialPage = loadAboutPage()
+const initialPage = loadhomePage()
 
 export function loadPage() {
   createHeader()
@@ -11,39 +11,39 @@ export function loadPage() {
 
 function createHeader() {
   const header = document.createElement('div')
-  const brand = document.createElement('h1')
-  const logo  = document.createElement('a')
+  const logo = document.createElement('a')
+  const menu = createTabsMenu()
 
   content.appendChild(header)
-  header.appendChild(brand)
   header.appendChild(logo)
+  header.appendChild(menu)
 
   header.className = 'header'
-  brand.innerHTML = 'Manger BIO'
 }
 
 function createTabsMenu() {
   const tabs = document.createElement('div')
-  const about = document.createElement('a')
+  const home = document.createElement('a')
   const menu = document.createElement('a')
   const contact = document.createElement('a')
 
-  content.appendChild(tabs)
-  tabs.appendChild(about)
+  tabs.appendChild(home)
   tabs.appendChild(menu)
   tabs.appendChild(contact)
 
   tabs.className = 'tabs'
 
-  about.innerText = 'About'
+  home.innerText = 'Home'
   menu.innerText = 'Menu'
-  contact.innerText = 'Contact'
+  contact.innerText = 'Contact Us'
 
   contact.id = 'contactBtn'
   menu.id = 'menuBtn'
-  about.id = 'aboutBtn'
+  home.id = 'homeBtn'
 
   contact.className = 'tabBtn'
   menu.className = 'tabBtn'
-  about.className = 'tabBtn'
+  home.className = 'tabBtn'
+
+  return tabs
 }

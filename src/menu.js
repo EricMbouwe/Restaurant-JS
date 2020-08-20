@@ -3,7 +3,6 @@ export function createMenuPage() {
   const card = document.createElement('div')
   const title = document.createElement('p')
 
-  content.appendChild(wrapper)
   wrapper.appendChild(card)
   wrapper.appendChild(title)
 
@@ -18,4 +17,6 @@ export function createMenuPage() {
       Quod, doloribus eius ipsum inventore, cum exercitationem saepe quam necessitatibus iure maxime unde recusandae,
         similique praesentium esse ratione aspernatur dignissimos alias.Veniam quos et inventore at amet, architecto dicta
     tempora`
+  
+  return wrapper
 }

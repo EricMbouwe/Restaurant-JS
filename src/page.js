@@ -1,10 +1,12 @@
 import { createAboutPage as loadAboutPage } from './about.js'
+
 const content = document.getElementById('content')
+const initialPage = loadAboutPage()
 
 export function loadPage() {
   createHeader()
   createTabsMenu()
-  loadAboutPage()
+  content.appendChild(initialPage)
 }
 
 function createHeader() {

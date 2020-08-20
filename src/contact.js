@@ -1,5 +1,3 @@
-const content = document.getElementById('content')
-
 export function createContactPage() {
   const wrapper = document.createElement('div')
   const socialLinks = document.createElement('div')
@@ -7,7 +5,6 @@ export function createContactPage() {
   const instagram = documment.createElement('span')
   const copyrights = document.createElement('small')
 
-  content.appendChild(wrapper)
   wrapper.appendChild(socialLinks)
   socialLinks.appendChild(facebook)
   socialLinks.appendChild(instagram)
@@ -24,4 +21,6 @@ export function createContactPage() {
       Quod, doloribus eius ipsum inventore, cum exercitationem saepe quam necessitatibus iure maxime unde recusandae,
         similique praesentium esse ratione aspernatur dignissimos alias.Veniam quos et inventore at amet, architecto dicta
     tempora`
+  
+  return wrapper
 }

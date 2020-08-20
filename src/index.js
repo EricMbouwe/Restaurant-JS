@@ -1,44 +1,46 @@
 import { loadPage } from './page.js'
 import { createAboutPage as loadAboutPage } from "./about.js";
 import { createMenuPage as loadMenuPage } from './menu.js'
-import { createContactPage as loadContactpage } from './contact.js'
+import { createContactPage as loadContactPage } from './contact.js'
 
 
 loadPage()
+
 const pageContent = document.getElementById('content')
 const aboutButton = document.getElementById('aboutBtn')
 const menuButton = document.getElementById('menuBtn')
 const contactButton = document.getElementById('contactBtn')
 
-function updatePage(e) {
+function updatePage() {
 
-  clearPage()
-
-  if (e.target.id === 'aboutBtn') {
-    loadAboutPage()
-  }
-  else if (e.target.id === 'menuBtn') {
-    loadMenuPage()
-  }
-  else {
-    loadContactpage
-  }
 }
 
 function clearPage() {
   const currentTab = document.querySelector('.tab')
-  pageContent.removeChild(currentTab)
+  if (currentTab) {
+    pageContent.removeChild(currentTab)
+  }
+  return
 }
 
 
-aboutButton.addEventListener('click', updatePage)
-menuButton.addEventListener('click', updatePage)
-contactButton.addEventListener('click', updatePage(e))
+aboutButton.addEventListener('click', () => {
+  clearPage()
+  const aboutPage = loadAboutPage()
+  pageContent.appendChild(aboutPage)
+  console.log('about button clicked');
+}, false)
 
+menuButton.addEventListener('click', () => {
+  clearPage()
+  const menuPage = loadMenuPage()
+  pageContent.appendChild(menuPage)
+  console.log('menu button clicked');
+}, false)
 
-
-// menuButton.addEventListener('click', function () {
-//   const tab = document.getElementById('aboutPage')
-//   loadMenuPage()
-//   const currentTab = document.getElementById('menuPage')
-// }, { once: true })
+contactButton.addEventListener('click', () => {
+  clearPage()
+  // const contactPage = loadContactPage()
+  // pageContent.appendChild(contactPage)
+  console.log('contact button clicked');
+}, false)

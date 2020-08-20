@@ -7,7 +7,7 @@ A restaurant landing page build with JS
 
 > Display content of each tab only using JavaScript.
 
-![screenshot](./restaurant-screenshot.png)
+![screenshot](../restaurant-screenshot.png)
 
 This app was built with JavaScript, HTML and CSS
 
@@ -18,7 +18,7 @@ This app was built with JavaScript, HTML and CSS
 - Sass
 
 ## Live Demo
-
+[Live link here](https://rawcdn.githack.com/EricMbouwe/Restaurant-JS/c2c4eea0e7522134d0803c08f2a2cb5a67664323/dist/index.html)
 
 
 ## Getting Started

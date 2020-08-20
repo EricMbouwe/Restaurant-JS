@@ -7,7 +7,7 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: url(../restaurant-landing.jpg);
+  background-image: url(./restaurant-landing.jpg);
   background-size: 100vw;
   background-position: center top;
   background-repeat: no-repeat;
@@ -51,15 +51,15 @@ body {
   }
 
   .about {
-
+    color: purple;
   }
 
   .menu {
-
+    color: #0fb9b1;
   }
 
   .contact {
-
+    color: indigo;
   }
 
   img {

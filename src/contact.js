@@ -14,5 +14,6 @@ export function createContactPage() {
   wrapper.appendChild(copyrights)
 
   wrapper.className = 'contact'
+  wrapper.id = 'contactPage'
   wrapper.innerText = 'CONTACT'
 }

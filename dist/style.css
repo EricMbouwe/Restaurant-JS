@@ -7,7 +7,7 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: url(../restaurant-landing.jpg);
+  background-image: url(./restaurant-landing.jpg);
   background-size: 100vw;
   background-position: center top;
   background-repeat: no-repeat;
@@ -34,6 +34,18 @@ body {
 
 #content .tabs span:hover {
   color: green;
+}
+
+#content .about {
+  color: purple;
+}
+
+#content .menu {
+  color: #0fb9b1;
+}
+
+#content .contact {
+  color: indigo;
 }
 
 #content img {

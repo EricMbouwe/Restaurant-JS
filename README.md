@@ -7,7 +7,7 @@ A restaurant landing page build with JS
 
 > Display content of each tab only using JavaScript.
 
-![screenshot](../restaurant-screenshot.png)
+![screenshot](./dist/restaurant-screenshot.png)
 
 This app was built with JavaScript, HTML and CSS
 

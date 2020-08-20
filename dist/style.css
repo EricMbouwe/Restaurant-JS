@@ -86,11 +86,25 @@ body {
 }
 
 #content .menu {
-  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   opacity: 0.8;
   color: #fff;
   padding: 2rem;
   line-height: 1.5rem;
+}
+
+#content .menu div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #000;
+  margin: .5rem;
+  padding: 2rem;
+  border-radius: .1rem;
 }
 
 #content .contact {

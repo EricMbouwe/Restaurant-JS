@@ -42,4 +42,8 @@ function createTabsMenu() {
   contact.id = 'contactBtn'
   menu.id = 'menuBtn'
   about.id = 'aboutBtn'
+
+  contact.className = 'tabBtn'
+  menu.className = 'tabBtn'
+  about.className = 'tabBtn'
 }

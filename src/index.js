@@ -23,20 +23,32 @@ function clearPage() {
 
 aboutButton.addEventListener('click', () => {
   clearPage()
+  setActiveTabClass(aboutButton)
   const aboutPage = loadAboutPage()
   pageContent.appendChild(aboutPage)
 }, false)
 
 menuButton.addEventListener('click', () => {
   clearPage()
+  setActiveTabClass(menuButton)
   const menuPage = loadMenuPage()
-  menuButton.classList.add('active')
-  aboutButton.classList.remove('active')
   pageContent.appendChild(menuPage)
 }, false)
 
 contactButton.addEventListener('click', () => {
   clearPage()
+  setActiveTabClass(contactButton)
   const contactPage = loadContactPage()
   pageContent.appendChild(contactPage)
 }, false)
+
+function setActiveTabClass(currentButton) {
+  const tabButtons = document.querySelectorAll('.tabBtn')
+
+  tabButtons.forEach(btn => {
+    if (btn.classList.contains('active')) {
+      btn.classList.remove('active')
+      currentButton.classList.add('active')
+    }
+  })
+}

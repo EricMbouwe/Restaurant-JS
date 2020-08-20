@@ -10,6 +10,8 @@ const aboutButton = document.getElementById('aboutBtn')
 const menuButton = document.getElementById('menuBtn')
 const contactButton = document.getElementById('contactBtn')
 
+aboutButton.classList.add('active')
+
 function clearPage() {
   const currentTab = document.querySelector('.tab')
   if (currentTab) {
@@ -28,6 +30,8 @@ aboutButton.addEventListener('click', () => {
 menuButton.addEventListener('click', () => {
   clearPage()
   const menuPage = loadMenuPage()
+  menuButton.classList.add('active')
+  aboutButton.classList.remove('active')
   pageContent.appendChild(menuPage)
 }, false)
 

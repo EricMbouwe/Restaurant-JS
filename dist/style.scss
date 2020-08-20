@@ -3,6 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,18 +13,6 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
 }
-
-// body::after {
-//   content: '';
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   // filter: blur();
-//   // background-color: ;
-//   // opacity: .1;
-// }
 
 #content {
 
@@ -38,21 +27,27 @@ body {
     background-color: rgb(209, 205, 205);
     font-size: 1rem;
     font-weight: bold;
+    border-bottom: 4px solid indigo;
 
     a {
       display: inline-block;
       cursor: pointer;
       padding: 1.2rem;
+      border: 1px solid inherit;
 
       &:hover {
-        color: green;
-      }
-      
-      &:focus {
-        border: 1px solid #000;
+        color: #fff;
         background-color: indigo;
+        border-color: indigo;
       }
+
     }
+  }
+  
+  .active {
+    background-color: indigo;
+    border-color: indigo;
+    color: #fff;
   }
 
   .tab {

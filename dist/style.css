@@ -3,6 +3,8 @@
 *::after {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -24,21 +26,26 @@ body {
   background-color: #d1cdcd;
   font-size: 1rem;
   font-weight: bold;
+  border-bottom: 4px solid indigo;
 }
 
 #content .tabs a {
   display: inline-block;
   cursor: pointer;
   padding: 1.2rem;
+  border: 1px solid inherit;
 }
 
 #content .tabs a:hover {
-  color: green;
+  color: #fff;
+  background-color: indigo;
+  border-color: indigo;
 }
 
-#content .tabs a:focus {
-  border: 1px solid #000;
+#content .active {
   background-color: indigo;
+  border-color: indigo;
+  color: #fff;
 }
 
 #content .tab {

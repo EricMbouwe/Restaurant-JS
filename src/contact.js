@@ -15,6 +15,8 @@ export function createContactPage() {
 
   wrapper.className = 'contact'
   wrapper.id = 'contactPage'
+  wrapper.classList.add('tab')
+
   wrapper.innerText = `CONTACT Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos repudiandae maiores soluta repellendus obcaecati,
     quo adipisci perferendis earum iusto assumenda quod ut nostrum non necessitatibus ipsa rerum eligendi! Minus, illum!
     Accusamus non quia libero quasi eveniet omnis soluta.Impedit in iusto maxime odit reiciendis quaerat saepe et

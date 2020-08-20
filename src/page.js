@@ -37,7 +37,7 @@ function createTabsMenu() {
   menu.innerText = 'Menu'
   contact.innerText = 'Contact'
 
-  contact.id = 'contact'
-  menu.id = 'menu'
-  about.id = 'about'
+  contact.id = 'contactBtn'
+  menu.id = 'menuBtn'
+  about.id = 'aboutBtn'
 }

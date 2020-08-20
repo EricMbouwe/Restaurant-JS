@@ -9,6 +9,8 @@ export function createMenuPage() {
 
   wrapper.className = 'menu'
   wrapper.id = 'menuPage'
+  wrapper.classList.add('tab')
+
   card.innerText = `MENU Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos repudiandae maiores soluta repellendus obcaecati,
     quo adipisci perferendis earum iusto assumenda quod ut nostrum non necessitatibus ipsa rerum eligendi! Minus, illum!
     Accusamus non quia libero quasi eveniet omnis soluta.Impedit in iusto maxime odit reiciendis quaerat saepe et

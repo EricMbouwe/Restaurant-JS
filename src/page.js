@@ -3,6 +3,7 @@ const content = document.getElementById('content')
 
 export function loadPage() {
   createHeader()
+  createTabsMenu()
   loadAboutPage()
 }
 
@@ -17,4 +18,26 @@ function createHeader() {
 
   header.className = 'header'
   brand.innerHTML = 'MANGER BIO'
+}
+
+function createTabsMenu() {
+  const tabs = document.createElement('div')
+  const about = document.createElement('span')
+  const menu = document.createElement('span')
+  const contact = document.createElement('span')
+
+  content.appendChild(tabs)
+  tabs.appendChild(about)
+  tabs.appendChild(menu)
+  tabs.appendChild(contact)
+
+  tabs.className = 'tabs'
+
+  about.innerText = 'About'
+  menu.innerText = 'Menu'
+  contact.innerText = 'Contact'
+
+  contact.id = 'contact'
+  menu.id = 'menu'
+  about.id = 'about'
 }

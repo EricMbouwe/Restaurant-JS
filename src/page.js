@@ -30,6 +30,10 @@ function createTabsMenu() {
   return tabs;
 }
 
+export function addElementToPage(element) {
+  content.appendChild(element);
+}
+
 function createHeader() {
   const header = document.createElement('div');
   const menu = createTabsMenu();
@@ -39,15 +43,11 @@ function createHeader() {
 
   header.className = 'header';
 
-  return header
-}
-
-export function addElementToPage(element) {
-  content.appendChild(element)
+  return header;
 }
 
 function removeElementToPage(element) {
-  content.removeChild(element)
+  content.removeChild(element);
 }
 
 export function clearPage() {
@@ -55,7 +55,6 @@ export function clearPage() {
   if (currentTab) {
     removeElementToPage(currentTab);
   }
-  return
 }
 
 export function setActiveTabClass(currentButton) {
@@ -74,4 +73,4 @@ export function setActiveTabClass(currentButton) {
   addElementToPage(initialPage);
   const homeButton = document.getElementById('homeBtn');
   homeButton.classList.add('active');
-})()
+}());

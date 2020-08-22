@@ -15,16 +15,16 @@ function handleTabClick(button, page) {
 }
 
 homeButton.addEventListener('click', () => {
-  const page = loadhomePage()
-  handleTabClick(homeButton, page)
+  const page = loadhomePage();
+  handleTabClick(homeButton, page);
 });
 
 menuButton.addEventListener('click', () => {
-  const page = loadMenuPage()
-  handleTabClick(menuButton, page)
+  const page = loadMenuPage();
+  handleTabClick(menuButton, page);
 });
 
 contactButton.addEventListener('click', () => {
-  const page = loadContactPage()
-  handleTabClick(contactButton, page)
+  const page = loadContactPage();
+  handleTabClick(contactButton, page);
 });

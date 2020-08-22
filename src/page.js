@@ -32,18 +32,46 @@ function createTabsMenu() {
 
 function createHeader() {
   const header = document.createElement('div');
-  const logo = document.createElement('a');
   const menu = createTabsMenu();
 
-  content.appendChild(header);
-  header.appendChild(logo);
+  addElementToPage(header);
   header.appendChild(menu);
 
   header.className = 'header';
+
+  return header
 }
 
-export function loadPage() {
-  createHeader();
-  createTabsMenu();
-  content.appendChild(initialPage);
+export function addElementToPage(element) {
+  content.appendChild(element)
 }
+
+function removeElementToPage(element) {
+  content.removeChild(element)
+}
+
+export function clearPage() {
+  const currentTab = document.querySelector('.tab');
+  if (currentTab) {
+    removeElementToPage(currentTab);
+  }
+  return
+}
+
+export function setActiveTabClass(currentButton) {
+  const tabButtons = document.querySelectorAll('.tabBtn');
+
+  tabButtons.forEach(btn => {
+    if (btn.classList.contains('active')) {
+      btn.classList.remove('active');
+      currentButton.classList.add('active');
+    }
+  });
+}
+
+(function loadPage() {
+  createHeader();
+  addElementToPage(initialPage);
+  const homeButton = document.getElementById('homeBtn');
+  homeButton.classList.add('active');
+})()

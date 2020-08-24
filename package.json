@@ -20,6 +20,7 @@
   "homepage": "https://github.com/EricMbouwe/Restaurant-JS#readme",
   "devDependencies": {
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }

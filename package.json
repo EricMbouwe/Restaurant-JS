@@ -1,0 +1,26 @@
+{
+  "name": "restaurant-js",
+  "version": "1.0.0",
+  "description": "A restaurant landing page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricMbouwe/Restaurant-JS.git"
+  },
+  "author": "Eric Mbouwe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EricMbouwe/Restaurant-JS/issues"
+  },
+  "homepage": "https://github.com/EricMbouwe/Restaurant-JS#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

@@ -43,8 +43,8 @@ Clone this repo with <code>git clone git@github.com:ericmbouwe/restaurant-page.g
 
 :bust_in_silhouette: **Eric Mbouwe**
 
-- Github: [ericmbouwe](https://github.com/ericmbouwe)
-- LinkedIn: [Eric Mbouwe](www.linkedin.com/in/ericmbouwe)
+- Github: [ericmbouwe](https://www.github.com/ericmbouwe)
+- LinkedIn: [Eric Mbouwe](https://www.linkedin.com/in/ericmbouwe)
 
 ## 🤝 Contributing
 
